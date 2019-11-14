@@ -93,7 +93,38 @@ object simulate {
       "2013-07-28_requestsInSelectedGrid.csv",
       "2013-07-29_requestsInSelectedGrid.csv",
       "2013-07-30_requestsInSelectedGrid.csv",
-      "2013-07-31_requestsInSelectedGrid.csv"
+      "2013-07-31_requestsInSelectedGrid.csv",
+      "2013-08-01_requestsInSelectedGrid.csv",
+      "2013-08-02_requestsInSelectedGrid.csv",
+      "2013-08-03_requestsInSelectedGrid.csv",
+      "2013-08-04_requestsInSelectedGrid.csv",
+      "2013-08-05_requestsInSelectedGrid.csv",
+      "2013-08-06_requestsInSelectedGrid.csv",
+      "2013-08-07_requestsInSelectedGrid.csv",
+      "2013-08-08_requestsInSelectedGrid.csv",
+      "2013-08-09_requestsInSelectedGrid.csv",
+      "2013-08-10_requestsInSelectedGrid.csv",
+      "2013-08-11_requestsInSelectedGrid.csv",
+      "2013-08-12_requestsInSelectedGrid.csv",
+      "2013-08-13_requestsInSelectedGrid.csv",
+      "2013-08-14_requestsInSelectedGrid.csv",
+      "2013-08-15_requestsInSelectedGrid.csv",
+      "2013-08-16_requestsInSelectedGrid.csv",
+      "2013-08-17_requestsInSelectedGrid.csv",
+      "2013-08-18_requestsInSelectedGrid.csv",
+      "2013-08-19_requestsInSelectedGrid.csv",
+      "2013-08-20_requestsInSelectedGrid.csv",
+      "2013-08-21_requestsInSelectedGrid.csv",
+      "2013-08-22_requestsInSelectedGrid.csv",
+      "2013-08-23_requestsInSelectedGrid.csv",
+      "2013-08-24_requestsInSelectedGrid.csv",
+      "2013-08-25_requestsInSelectedGrid.csv",
+      "2013-08-26_requestsInSelectedGrid.csv",
+      "2013-08-27_requestsInSelectedGrid.csv",
+      "2013-08-28_requestsInSelectedGrid.csv",
+      "2013-08-29_requestsInSelectedGrid.csv",
+      "2013-08-30_requestsInSelectedGrid.csv",
+      "2013-08-31_requestsInSelectedGrid.csv"
     )
 //    var testFile = Array("2013-09-01_requestsInSelectedGrid_3000.csv",
 //      "2013-09-19_requestsInSelectedGrid_3000.csv")
@@ -150,7 +181,7 @@ object simulate {
 
   def outputRunTime() = {
     var current = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date).replace(":", "_").replace(" ", "_")
-    val outputfilepath = "./ResultInPortugal_100v_300s_3person/" + current + "RuntimeResult.csv"
+    val outputfilepath = "./RunTimeCount/" + current + "RuntimeResult.csv"
     val writer = new FileWriter(outputfilepath, false)
     writer.append("Date,RunTime\n")
     runtimeCount.foreach { line => writer.append(line._1 + "," + line._2 + "\n") }
