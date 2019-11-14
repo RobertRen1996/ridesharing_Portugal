@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component jdk="1.8" jdk_type="JavaSDK">
+	<exclude-output/>
+	<contentEntry url="file://$MODULE_DIR$"/>
+	<lib name="jsr305-1.3.9.jar" scope="COMPILE">
+		<srcroot url="jar://$MODULE_DIR$/../../../../../localspark/spark-2.0.0-bin-hadoop2.7/jars/jsr305-1.3.9.jar!/"/>
+	</lib>
+</component>
